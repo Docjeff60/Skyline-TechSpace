@@ -1,0 +1,342 @@
+body{
+    background-color: rgba(19, 17, 17, 0.993);
+    margin: 0;
+    padding: 0;
+
+}
+
+.cont{
+    background-color: rgb(247, 243, 243);
+    border-radius: 25px;
+}
+
+
+.container{
+    width: 60%;
+    margin: auto;
+    background-color: grey;
+    text-align: center;
+    padding: 30px;
+
+}
+
+/* HERE IS THE HOME BUTTON */
+.home{
+    position: relative;
+    right: 35%;
+    top: 50px;
+    font-size: 22px;
+}
+
+.home-color{
+    color: black;
+}
+
+
+/* SOCIAL SECTION */
+
+.btn{
+    margin: 30px;
+}
+
+
+
+
+.btn-social{
+    background-color: #3b5998;
+    color: white;
+    padding: 10px 30px;
+    text-decoration: none;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.btn-social:nth-child(2){
+    background-color: #26a7de;
+}
+    
+.btn-social:nth-child(3){
+
+    background-color: #d10e00;
+}
+
+
+
+
+
+
+
+
+
+/* OR section here */
+.divider{
+    display: flex;
+    align-items: center;
+    margin: 20px 40px;
+}
+
+.divider::before, .divider::after{
+    content: "";
+    padding: 1px;
+    background-color: lightgray;
+    margin: 20px;
+    width: 20px;
+    flex: 1;
+
+}
+
+.divider-bg{
+    background-color: aliceblue;
+    padding: 15px 15px;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+
+
+
+
+
+/* USERNAME INPUT CODE STARTS HERE */
+input[type=text]{
+
+    width: 50%;
+    padding: 15px;
+    border-radius: 15px;
+    border: 1px solid grey;
+    text-indent: 20px;
+    
+}
+
+
+input[type=text]:focus{
+
+    border-radius: 15px;
+    border: 1px solid lightblue;
+    outline: none;
+    
+    
+}
+
+::placeholder{
+    font-size: 15px;
+    color: rgb(250, 186, 196);
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+
+}
+
+.user{
+    position: relative;
+}
+
+.form-user{
+    position: absolute;
+    left: 24%;
+    top: 12px;
+    font-size: 23px;
+}
+
+
+/* EMAIL STARTS HERE */
+
+input[type=email]{
+
+    width: 50%;
+    padding: 15px;
+    border-radius: 15px;
+    border: 1px solid grey;
+    text-indent: 20px;
+    margin-top: 20px;
+}
+
+
+input[type=email]:focus{
+
+    border-radius: 15px;
+    border: 1px solid lightblue;
+    outline: none;
+    
+    
+}
+
+.email{
+    position: relative;
+}
+
+.form-email{
+    position: relative;
+    right: 25%;
+    top: 60px;
+    font-size: 23px;
+}
+
+
+
+/* HERE STARTS THE TEL INPUT */
+
+
+input[type=tel]{
+
+    width: 50%;
+    padding: 15px;
+    border-radius: 15px;
+    border: 1px solid grey;
+    margin-top: 20px;
+    text-indent: 20px;
+}
+
+
+input[type=tel]:focus{
+
+    border-radius: 15px;
+    border: 1px solid lightblue;
+    outline: none;
+    
+    
+}
+
+.tel{
+    position: relative;
+}
+
+.form-tel{
+    position: relative;
+    right: 25%;
+    top: 60px;
+    font-size: 23px;
+}
+
+
+
+/* PASSWORD INPUT CODE STARTS HERE */
+
+input[type=password]{
+
+    width: 50%;
+    padding: 15px;
+    border-radius: 15px;
+    border: 1px solid grey;
+    margin-top: 40px;
+    text-indent: 20px;
+}
+
+
+input[type=password]:focus{
+
+    border-radius: 15px;
+    border: 1px solid lightblue;
+    outline: none;
+    
+}
+
+/* REGISTER SECTION */
+
+input[type=submit]{
+
+    width: 50%;
+    padding: 10px;
+    border: none ;
+    margin: 20px;
+    background-color: green;
+    border-radius: 15px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+/* MOBILE RESPONSIVENESS */
+
+
+@media(max-width:850px){
+
+    .container{
+        width: 100%;
+    }
+
+
+
+    .cont{
+        width: 88%;
+
+    }
+
+
+    .btn-social{
+        padding: 8px 15px;
+        margin: 5px;
+        
+    }
+
+    
+    input[type=text]{
+        width: 80%;
+        padding: 10px;
+
+    }
+    .form-user{
+        position: absolute;
+        left: 9%;
+        top: 8px;
+        font-size: 20px;
+    }
+
+
+
+
+    input[type=email]{
+        width: 80%;
+        padding: 10px;
+    }
+    .form-email{
+        position: relative;
+        right: 39%;
+        top: 52px;
+        font-size: 20px;
+    }
+
+
+
+
+    input[type=tel]{
+        width: 80%;
+        padding: 10px;
+    }
+    .form-tel{
+        position: relative;
+        right: 39%;
+        top: 52px;
+        font-size: 20px;
+    }
+
+
+
+
+    input[type=password]{
+        width: 80%;
+        padding: 10px;
+    }
+
+    input[type=conpassword]{
+
+        width: 80%;
+        padding: 10px;
+    }
+
+
+
+   /* OVERFLOW CODE */
+    body{
+        overflow-x: hidden;
+    }
+
+
+}
